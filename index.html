@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app = "juApp">
+<head>
+    <meta charset = "utf-8" />
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <title>Page Title</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+    <link rel = "stylesheet" type = "text/css" media = "screen" href = "style.css" />
+
+
+    <!-- Angular -->
+    <script src = "./node_modules/angular/angular.min.js"></script>
+    <script src = "./node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <!-- UI Router -->
+    <script src = "./libraries/angular-ui-router.js"></script>
+
+    <!-- Booststrap -->
+    <script src = "./node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel = "stylesheet" href = "./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src = "./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- UI-Bootstrap -->
+    <script src = "./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+    <!-- UI-Select -->
+    <script src = "./node_modules/ui-select/dist/select.min.js"></script>
+    <link rel = "stylesheet" href = "./node_modules/ui-select/dist/select.min.css">
+    <link rel = "stylesheet" href = "./libraries/selectize.bootstrap3.css">
+
+    <!-- Controllers -->
+    <script src = "app.js"></script>
+    <script src = "./js/controllers/homeCtrl.js"></script>
+    <script src = "./js/controllers/mainCtrl.js"></script>
+
+
+</head>
+<body>
+    <!-- Nav Bar Starts -->
+    <nav class = "navbar navbar-inverse">
+        <div class = "container-fluid">
+            <div class = "navbar-header">
+                <a class = "navbar-brand" ui-sref = "main">JU</a>
+            </div>
+            <ul class = "nav navbar-nav">
+                <li><a ui-sref = "main" type = "button">Dashboard <i class = "fa fa-home" aria-hidden = "true"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div ui-view></div>
+
+</body>
+</html>
